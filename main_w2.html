@@ -37,19 +37,23 @@
 
 
         function warning() {
-            let name = $('#order_name').val()
-            let select = $('#order-select').val()
-            let add = $('#order_add').val()
-            let phone = $('#order_phone').val()
+            let name = $('#order_name').val();
+            let select = $('#order-select').val();
+            let add = $('#order_add').val();
+            let phone = $('#order_phone').val();
 
             if (name == '') {
-                alert('이름을 입력해 주세요 !!').focus()
+                alert('이름을 입력해 주세요 !!');
+                $('#order_name').focus();
             } else if (select == '') {
-                alert('수량을 입력해 주세요 !!').focus()
+                alert('수량을 입력해 주세요 !!');
+                $('#order-select').focus();
             } else if (add == '') {
-                alert('주소를 입력해 주세요 !!').focus()
+                alert('주소를 입력해 주세요 !!');
+                $('#order_add').focus();
             } else if (phone = '') {
-                alert('전화번호를 입력해 주세요 !!').focus()
+                alert('전화번호를 입력해 주세요 !!');
+                $('#order_phone').focus();
             }
 
         }
