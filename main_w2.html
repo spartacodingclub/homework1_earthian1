@@ -44,16 +44,12 @@
 
             if (name == '') {
                 alert('이름을 입력해 주세요 !!').focus()
-                return
             } else if (select == '') {
                 alert('수량을 입력해 주세요 !!').focus()
-                return
             } else if (add == '') {
                 alert('주소를 입력해 주세요 !!').focus()
-                return
             } else if (phone = '') {
                 alert('전화번호를 입력해 주세요 !!').focus()
-                return
             }
 
         }
@@ -124,7 +120,7 @@
         </br>
 
         <div class="Btn-order">
-            <button class="btn btn-primary" type="submit">주문하기</button>
+            <button class="btn btn-primary" type="submit" onclick="warning()">주문하기</button>
         </div>
 
     </div>
