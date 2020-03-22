@@ -7,22 +7,7 @@
 
     <!-- style -->
     <style type="text/css">
-        .wrap {
-            width: 600px;
-            margin: auto;
-        }
-
-        .infoTable {
-            line-height: 1.5em;
-        }
-
-        .BtnOder {
-            text-align: center;
-        }
-
-        * {
-            font-family: 'Baloo Da 2', cursive;
-        }
+        /**css 효과, homework1.css파일로 빼냄**/
     </style>
 
     <!-- Required meta tags -->
@@ -48,6 +33,33 @@
     <!--google font-->
     <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2&display=swap" rel="stylesheet">
 
+    <script>
+
+
+        function warning() {
+            let name = $('#order_name').val()
+            let select = $('#order-select').val()
+            let add = $('#order_add').val()
+            let phone = $('#order_phone').val()
+
+            if (name == '') {
+                alert('이름을 입력해 주세요 !!').focus()
+                return
+            } else if (select == '') {
+                alert('수량을 입력해 주세요 !!').focus()
+                return
+            } else if (add == '') {
+                alert('주소를 입력해 주세요 !!').focus()
+                return
+            } else if (phone = '') {
+                alert('전화번호를 입력해 주세요 !!').focus()
+                return
+            }
+
+        }
+
+    </script>
+
 </head>
 
 <body>
@@ -63,17 +75,19 @@
             머신 러닝의 잠재력을 더욱 끌어올리고, 스마트폰의 영역을 확장하는 가공할 성능의 칩.
             Pro라는 이름에 전혀 손색 없는 강력한 최초의 iPhone, 지금 소개합니다.</p>
 
-        </br></br>
+        </br>
 
         <p style="font-size:30px; font-weight:bold">주문하기</p>
+    </div>
 
+    <div class="info">
         <div class="container-fluid">
 
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="order-name">주문자 이름</span>
                 </div>
-                <input type="text" class="form-control" placeholder="name" aria-label="Username"
+                <input type="text" class="form-control" id="order_name" placeholder="name"
                     aria-describedby="basic-addon1">
             </div>
 
@@ -93,7 +107,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="order-add">주소</span>
                 </div>
-                <input type="text" class="form-control" placeholder="adress" aria-label="Username"
+                <input type="text" class="form-control" id="order_add" placeholder="adress"
                     aria-describedby="basic-addon1">
             </div>
 
@@ -101,7 +115,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="order-phone">전화번호</span>
                 </div>
-                <input type="text" class="form-control" placeholder="phone" aria-label="Username"
+                <input type="text" class="form-control" id="order_phone" placeholder="phone"
                     aria-describedby="basic-addon1">
             </div>
 
@@ -109,7 +123,7 @@
 
         </br>
 
-        <div class="BtnOder">
+        <div class="Btn-order">
             <button class="btn btn-primary" type="submit">주문하기</button>
         </div>
 

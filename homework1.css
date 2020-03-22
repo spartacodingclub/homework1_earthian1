@@ -1,0 +1,21 @@
+.wrap {
+    width: 600px;
+    margin: auto;
+}
+
+.info {
+    width: 600px;
+    margin: auto;
+}
+
+.infoTable {
+    line-height: 1.5em;
+}
+
+.Btn-order {
+    text-align: center;
+}
+
+* {
+    font-family: 'Baloo Da 2', cursive;
+}
